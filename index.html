@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-A-Mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="a"></div><div id="circle"></div>
+    <div class="container">
+        <h1>Whack-a-Mole!</h1>
+        <h2>Your Score: <span id="score">0</span></h2>
+        <h2>Time Left: <span id="timer">10</span> seconds</h2>
+
+        <div id="gameBoard"></div>
+
+        <button id="startButton" onclick="startGame()">Start</button>
+        <button id="restartButton" onclick="restartGame()" style="display: none;">Restart</button>
+
+        <div id="result" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Your final score is <span id="finalScore">0</span>.</p>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
